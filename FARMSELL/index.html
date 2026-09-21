@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FarmWise - Smart Farming</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+    <div class="logo">
+        🌾 FarmWise
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="markets.html">Markets</a>
+        <a href="prediction.html">Price Prediction</a>
+        <a href="#">About</a>
+    </div>
+
+    <a href="markets.html" class="nav-button">
+        Find Best Market
+    </a>
+
+</nav>
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-tag">🌾 SMART FARMING • BETTER PROFITS</p>
+
+        <h1>
+            Where should I
+            <span>sell my crop today?</span>
+        </h1>
+
+        <p class="hero-text">
+            Compare market prices, transportation costs, and predicted
+            trends to find the market where you can earn the most.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="markets.html" class="primary-button">
+                Find Best Market →
+            </a>
+
+            <a href="prediction.html" class="secondary-button">
+                View Price Trends
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="image-placeholder">
+            🌾
+            <p>Smart farming starts here</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="market-finder">
+
+    <div class="finder-heading">
+        <p class="section-tag">SMART MARKET FINDER</p>
+
+        <h2>
+            Find the best market
+            <span>for your crop</span>
+        </h2>
+
+        <p>
+            Enter your crop details and we'll help you find
+            the market with the highest estimated profit.
+        </p>
+    </div>
+
+    <div class="finder-card">
+
+        <div class="input-group">
+            <label for="crop">🌾 Select Crop</label>
+
+            <select id="crop">
+                <option value="">Choose your crop</option>
+                <option value="wheat">Wheat</option>
+                <option value="rice">Rice</option>
+                <option value="potato">Potato</option>
+                <option value="tomato">Tomato</option>
+                <option value="onion">Onion</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="location">📍 Your Location</label>
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Enter your location"
+            >
+        </div>
+
+        <div class="input-group">
+            <label for="quantity">⚖️ Quantity</label>
+
+            <input
+                type="number"
+                id="quantity"
+                placeholder="Enter quantity in kg"
+            >
+        </div>
+
+        <button class="find-button" id="findMarket">
+            Find Best Market →
+        </button>
+
+    </div>
+
+</section>
+<section class="recommendation">
+
+    <div class="recommendation-heading">
+        <p class="section-tag">AI-POWERED RECOMMENDATION</p>
+
+        <h2>Your best market <span>today</span></h2>
+
+        <p>
+            Based on market prices, distance and estimated
+            transportation costs.
+        </p>
+    </div>
+
+    <div class="recommendation-card">
+
+        <div class="recommendation-top">
+
+            <div>
+                <p class="recommended-label">🏆 RECOMMENDED MARKET</p>
+
+                <h3>Dehradun Mandi</h3>
+
+                <p class="market-location">
+                    📍 Dehradun, Uttarakhand
+                </p>
+            </div>
+
+            <div class="profit-box">
+                <p>Estimated Profit</p>
+                <strong>₹12,070</strong>
+            </div>
+
+        </div>
+
+
+        <div class="market-details">
+
+            <div class="detail-box">
+                <span>🌾 Crop Price</span>
+                <strong>₹2,450 / quintal</strong>
+            </div>
+
+            <div class="detail-box">
+                <span>🚚 Transport Cost</span>
+                <strong>₹180</strong>
+            </div>
+
+            <div class="detail-box">
+                <span>📍 Distance</span>
+                <strong>12 km</strong>
+            </div>
+
+            <div class="detail-box">
+                <span>📈 Price Trend</span>
+                <strong class="trend">↗ Rising</strong>
+            </div>
+
+        </div>
+
+
+        <div class="recommendation-footer">
+
+            <p>
+                💡 This market offers the highest estimated
+                profit after transportation costs.
+            </p>
+
+            <button class="details-button">
+                View Market Details →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="market-comparison">
+
+    <div class="comparison-heading">
+
+        <p class="section-tag">MARKET COMPARISON</p>
+
+        <h2>
+            Compare nearby <span>markets</span>
+        </h2>
+
+        <p>
+            Compare today's prices, transportation costs and
+            estimated profits before making your decision.
+        </p>
+
+    </div>
+
+
+    <div class="comparison-card">
+
+        <div class="table-header">
+            <div>Market</div>
+            <div>Price / Quintal</div>
+            <div>Distance</div>
+            <div>Transport</div>
+            <div>Estimated Profit</div>
+        </div>
+
+
+        <div class="market-row best-market">
+
+            <div class="market-name">
+                <span class="best-badge">BEST</span>
+                <strong>🏆 Dehradun Mandi</strong>
+            </div>
+
+            <div>₹2,450</div>
+
+            <div>12 km</div>
+
+            <div>₹180</div>
+
+            <div class="profit">
+                ₹12,070
+            </div>
+
+        </div>
+
+
+        <div class="market-row">
+
+            <div class="market-name">
+                <strong>Rishikesh Mandi</strong>
+            </div>
+
+            <div>₹2,380</div>
+
+            <div>45 km</div>
+
+            <div>₹300</div>
+
+            <div class="profit">
+                ₹11,800
+            </div>
+
+        </div>
+
+
+        <div class="market-row">
+
+            <div class="market-name">
+                <strong>Haridwar Mandi</strong>
+            </div>
+
+            <div>₹2,300</div>
+
+            <div>55 km</div>
+
+            <div>₹360</div>
+
+            <div class="profit">
+                ₹11,430
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="price-prediction">
+
+    <div class="prediction-heading">
+
+        <p class="section-tag">PRICE INTELLIGENCE</p>
+
+        <h2>
+            Know where the price is
+            <span>heading</span>
+        </h2>
+
+        <p>
+            View recent market prices and short-term predicted
+            trends to make a smarter selling decision.
+        </p>
+
+    </div>
+
+
+    <div class="prediction-container">
+
+        <div class="prediction-info">
+
+            <div class="prediction-header">
+                <div>
+                    <p class="small-label">SELECTED CROP</p>
+                    <h3>🌾 Wheat</h3>
+                </div>
+
+                <div class="trend-badge">
+                    ↗ 4.8% Rising
+                </div>
+            </div>
+
+
+            <div class="price-main">
+                <p>Current Average Price</p>
+
+                <strong>₹2,450</strong>
+
+                <span>per quintal</span>
+            </div>
+
+
+            <div class="prediction-message">
+                <span>💡</span>
+
+                <p>
+                    Prices are expected to rise slightly over
+                    the next few days. Consider waiting if
+                    transportation and storage costs allow.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="chart-container">
+
+            <div class="chart-header">
+
+                <div>
+                    <h3>Price Trend</h3>
+                    <p>Last 7 days + prediction</p>
+                </div>
+
+                <select>
+                    <option>Wheat</option>
+                    <option>Rice</option>
+                    <option>Potato</option>
+                    <option>Tomato</option>
+                </select>
+
+            </div>
+
+
+            <div class="chart">
+
+                <div class="y-axis">
+                    <span>₹2,600</span>
+                    <span>₹2,500</span>
+                    <span>₹2,400</span>
+                    <span>₹2,300</span>
+                    <span>₹2,200</span>
+                </div>
+
+                <div class="chart-area">
+
+                    <div class="grid-line line-1"></div>
+                    <div class="grid-line line-2"></div>
+                    <div class="grid-line line-3"></div>
+                    <div class="grid-line line-4"></div>
+                    <div class="grid-line line-5"></div>
+
+                    <div class="trend-line">
+                        <div class="point point-1"></div>
+                        <div class="point point-2"></div>
+                        <div class="point point-3"></div>
+                        <div class="point point-4"></div>
+                        <div class="point point-5"></div>
+                        <div class="point point-6"></div>
+                        <div class="point point-7"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="chart-days">
+                <span>Mon</span>
+                <span>Tue</span>
+                <span>Wed</span>
+                <span>Thu</span>
+                <span>Fri</span>
+                <span>Sat</span>
+                <span>Sun</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="features">
+
+    <div class="features-heading">
+
+        <p class="section-tag">WHY FARMWISE?</p>
+
+        <h2>
+            Everything you need to make a
+            <span>smarter selling decision</span>
+        </h2>
+
+        <p>
+            FarmWise combines market prices, predictions and
+            transportation costs to help farmers maximize their profit.
+        </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                📊
+            </div>
+
+            <h3>Market Prices</h3>
+
+            <p>
+                Compare crop prices across nearby markets
+                and find where your crop is valued the most.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🤖
+            </div>
+
+            <h3>Price Prediction</h3>
+
+            <p>
+                Get short-term price trends to understand
+                whether prices may rise or fall.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🚚
+            </div>
+
+            <h3>Transport Estimate</h3>
+
+            <p>
+                Estimate transportation costs based on
+                the distance between you and the market.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                💰
+            </div>
+
+            <h3>Profit Optimization</h3>
+
+            <p>
+                Compare selling revenue and expenses to
+                find the market with the highest expected profit.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="how-it-works">
+
+    <div class="how-heading">
+
+        <p class="section-tag">HOW IT WORKS</p>
+
+        <h2>
+            From crop to
+            <span>best market</span>
+        </h2>
+
+        <p>
+            Four simple steps to help you make a smarter
+            selling decision.
+        </p>
+
+    </div>
+
+
+    <div class="steps-container">
+
+        <div class="step-card">
+
+            <div class="step-number">01</div>
+
+            <div class="step-icon">
+                🌾
+            </div>
+
+            <h3>Enter Crop Details</h3>
+
+            <p>
+                Select your crop, location and the quantity
+                you want to sell.
+            </p>
+
+        </div>
+
+
+        <div class="step-arrow">
+            →
+        </div>
+
+
+        <div class="step-card">
+
+            <div class="step-number">02</div>
+
+            <div class="step-icon">
+                📊
+            </div>
+
+            <h3>Compare Markets</h3>
+
+            <p>
+                We compare prices from nearby markets
+                to find the best available options.
+            </p>
+
+        </div>
+
+
+        <div class="step-arrow">
+            →
+        </div>
+
+
+        <div class="step-card">
+
+            <div class="step-number">03</div>
+
+            <div class="step-icon">
+                🚚
+            </div>
+
+            <h3>Calculate Costs</h3>
+
+            <p>
+                Transportation costs and market distance
+                are considered before calculating profit.
+            </p>
+
+        </div>
+
+
+        <div class="step-arrow">
+            →
+        </div>
+
+
+        <div class="step-card">
+
+            <div class="step-number">04</div>
+
+            <div class="step-icon">
+                🏆
+            </div>
+
+            <h3>Get Best Recommendation</h3>
+
+            <p>
+                FarmWise recommends the market with the
+                highest estimated profit.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="final-cta">
+
+    <div class="cta-content">
+
+        <p class="section-tag">MAKE A SMARTER DECISION</p>
+
+        <h2>
+            Ready to find your
+            <span>best market?</span>
+        </h2>
+
+        <p>
+            Compare prices, estimate transportation costs and
+            discover where you can earn the most from your crop.
+        </p>
+
+        <a href="markets.html" class="cta-button">
+            Find Best Market →
+        </a>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                🌾 FarmWise
+            </div>
+
+            <p>
+                Helping farmers make smarter selling decisions
+                through market prices, predictions and profit analysis.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <div class="footer-column">
+
+                <h4>Product</h4>
+
+                <a href="index.html">Home</a>
+                <a href="markets.html">Market Finder</a>
+                <a href="prediction.html">Price Prediction</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Features</h4>
+
+                <a href="#">Market Prices</a>
+                <a href="#">Transport Estimate</a>
+                <a href="#">Profit Optimization</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Team</h4>
+
+                <a href="#">About Us</a>
+                <a href="#">Hackathon Project</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 FarmWise. Built for smarter farming.
+        </p>
+
+        <p>
+            🌱 Technology for better decisions
+        </p>
+
+    </div>
+
+</footer>
+<script>
+async function testBackend() {
+    try {
+        const response = await fetch("http://127.0.0.1:5000");
+        const data = await response.text();
+
+        console.log(data);
+        alert(data);
+    } catch (error) {
+        console.error(error);
+        alert("Backend is not connected!");
+    }
+}
+</script>
+
+</body>
+</html>
